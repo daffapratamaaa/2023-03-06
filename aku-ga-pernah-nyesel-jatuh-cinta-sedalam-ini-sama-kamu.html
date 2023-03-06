@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+<title>Aku ga pernah nyesel jatuh cinta sedalam ini sama kamu</title>
+<meta name="description" content="Daffa Pratama Nur Ardiansyah">
+<!-- 
+  Made with love by Daffa Pratama!
+  
+     Blog: www.daffa-pratama.my.id
+     Instagram: @daffapratamanurardiansyah
+     TikTok: @daffa_pratama_
+     Email: admin@daffa-pratama.my.id
+     
+  Thanks to all <3
+-->
+</head>
+<style>
+:root {
+--gaya-font: 'Quicksand', sans-serif;
+--gaya-font2: 'Nunito Sans', sans-serif;
+--gaya-font3: 'Dancing Script', sans-serif;
+}
+body {background:#000;font-family:var(--gaya-font); margin: 0;}
+body::before{content:"\00A9  Daffa Pratama Nur Ardiansyah";color:white;opacity:.15;font-size:11px;position:fixed;bottom:25px;right:25px;z-index:2}
+#bodyblur{animation: jj 7s infinite;opacity:.7;position:fixed;top:0;left:0;right:0;bottom:0;z-index:-1;transition:all 1s ease;} 
+#wallpaper{width:100%;height:100%;opacity:0;transform: scale(2);transition:all 1.7s ease;}
+@keyframes jj{0%  {transform: scale(1.2);} 50% {transform: scale(1.5);} 100% {transform: scale(1.2);}}
+.parallax {background-image: url('https://feeldreams.github.io/pics/awan1.jpg'); height: 100vh; background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+.parallax > *{display: flex; z-index:99;flex-direction: column;justify-content: center;align-items:center;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);}
+#beneranblur{z-index:2;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);-webkit-backdrop-filter:blur(0px); backdrop-filter:blur(0px);transition:all 3s ease;}
+.parallax .konten{position:absolute;top:20%;width:100%;z-index:99;color:white}
+section {position:relative;z-index:99;padding: 1em;height: 100vh;display: flex; flex-direction: column;justify-content: center;align-items:center;text-shadow: 0px 2px 2px rgba(0, 0, 0, .8);border-top:2px dashed #fff}
+section {background-image: var(--bg);background-attachment: fixed;background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+section:nth-child(even) {color:white}
+section:nth-child(odd) {color:white}
+
+.konten img, .stiker{box-shadow: 0 4px 30px rgba(255,255,255, 0.3);backdrop-filter: blur(5px);-webkit-backdrop-filter: blur(5px);width:90px;height:90px;background: rgba(255, 255, 255, 0.7);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 10%;padding:10px;margin-bottom:25px}
+section .wp img{position:absolute;top:0;left:0;width:100%;height:100%;padding:0;background:none;border:none}
+section .wp::after{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.7);}
+
+h1 {font-size: 2rem;}
+.lingkar{font-weight:400;border-bottom:1px solid #FF0900;}
+h1, h2, h3{margin: 0;text-align: center;margin: 1rem 0;}
+p{font-size:15px;font-family:var(--gaya-font2);text-align:center}
+a {color:white;text-decoration: none;transition: all 0.3s ease-in-out;&:hover, &:focus, &:active {color: #f1e8d9;}}
+#hsatu, #foto{transition: all .3s ease}
+#judulakhir{z-index:100;font-size:25px;font-family:var(--gaya-font3);}
+#kalimatakhir{z-index:100;margin-right:50px;margin-left:50px;font-size:15px;font-family:var(--gaya-font2);}
+.tipeA{font-family:var(--gaya-font);}
+
+svg{vertical-align: middle;width: 22px;height: 22px;fill: #fff}
+.menu{position: fixed;bottom: 10vh;width:100%;z-index: 999;display:flex;justify-content:center;align-items:center;transition: all .3s ease}
+.tombol{background-color: rgba(255,255,255,.25);border-radius: 50px;overflow: hidden;display: flex;align-items: center;justify-content: center;width: 45px;height: 45px;-webkit-transition: all .2s ease-out;transition: all .2s ease-out}
+.tombol svg{margin: auto;fill: #fff}
+
+.fa-heart {opacity:.3;color:white;font-size: 20px;position: fixed;animation:  heartMove linear 1;top: -10vh;z-index: 999;}
+@keyframes heartMove {0%{transform: translateY(-10vh) ;} 100%{transform: translateY(100vh) ;}}
+
+.swal2-modal > *{font-size:16px;color:white}
+.swal2-title{line-height:1.3em;font-size:17px;text-align:center;padding:15px 30px 0 30px;}
+.swal2-timer-progress-bar-container > *{opacity:.7;background:#00B6FF;margin:0 2px}
+.swal2-modal{background: rgba(0,0,0, 1);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 8px;max-width:330px;top:-60px;}
+.swal2-image{background: rgba(255, 255, 255, 0.5);box-shadow: 0 4px 30px rgba(255,255,255, 0.3);border: 1px solid rgba(255, 255, 255, 0.3);border-radius: 8px;padding:10px;}
+.swal2-styled.swal2-confirm, .swal2-styled.swal2-cancel{position: relative;background-color: #4839eb;color: #fff;border-radius:18px;z-index: 1;transition: all 0.2s;}
+
+/* Pop-Up Box (Style 2) by Daffa Pratama */ .popSc{position:fixed;top:0;bottom:0;left:0;right:0;padding:20px;background:rgba(255, 255, 255, 0.1);z-index:99980;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);display:flex;justify-content:center;align-items:center} .popSc.hidden{display:none} .popSc .popBo{position:relative;background:rgba(255, 255, 255, 0.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);max-width:400px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:30px;border-radius:20px;box-shadow:0 5px 25px rgb(0 0 0 / 20%)} .popSc .popBo svg{display:block;width:50px;height:50px;fill:none !important;stroke:#08102b;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5} .popSc .popBo h2{margin:10px 0 15px 0;font-size:1.2rem;font-weight:800;color:#08102b} .popSc .popBo p{margin:0;line-height:1.7em;font-size:0.9rem;color:#08102b} .popSc .popBo .popBtn{display:inline-flex;justify-content:center;align-items:center;height:50px;width:50px;outline:none;border:none;background:#482dff;border-radius:50%;margin-top:20px;transition:all .2s ease;-webkit-transition:all .2s ease} .popSc .popBo .popBtn:hover{transform:scale(1.05);-webkit-transform:scale(1.05)} .popSc .popBo .popBtn svg{width:24px;height:24px;stroke:#fff;flex-shrink:0} .popSc .popBo .popBtn svg.r{animation:rotateIcn 1.5s infinite linear;-webkit-animation:rotateIcn 1.5s infinite linear} .popSc{animation:popupBlur .3s ease-in; -webkit-animation:popupBlur .3s} .popSc >*{animation:popupScale .3s ease-in; -webkit-animation:popupScale .3s} .darkMode .popSc{background:rgba(0, 0, 0, 0.1)} .darkMode .popSc .popBo{background:rgba(50, 50, 50, 0.8)} .darkMode .popSc .popBo svg{stroke:#fefefe} .darkMode .popSc .popBo p, .darkMode .popSc .popBo h2{color:#fefefe} @keyframes popupBlur {from{opacity:0}to{opacity:1}} @-webkit-keyframes popupBlur{from{opacity:0}to{opacity:1}} @keyframes popupScale{from{transform:scale(0);animation-timing-function:ease-in;opacity:0}to{transform:scale(1);opacity:1}} @-webkit-keyframes popupScale{from{-webkit-transform:scale(0);-webkit-animation-timing-function: ease-in;opacity:0}to{-webkit-transform:scale(1);opacity:1}} @keyframes rotateIcn{from{transform:rotate(0deg)} to{transform:rotate(359deg)}} @-webkit-keyframes rotateIcn{from{-webkit-transform:rotate(0deg)} to{-webkit-transform:rotate(359deg)}}
+/* Toast Notification by Daffa Pratama */ .tNtf span{position:fixed;left:24px;bottom:-70px;display:inline-flex;align-items:center;text-align:center;justify-content:center;margin-bottom:20px;z-index:99981;background:#323232;color:rgba(255,255,255,.8);font-size:14px;font-family:inherit;border-radius:3px;padding:13px 24px; box-shadow:0 5px 35px rgba(149,157,165,.3);opacity:0;transition:all .1s ease;animation:slideinwards 2s ease forwards;-webkit-animation:slideinwards 2s ease forwards} @media screen and (max-width:500px){.tNtf span{margin-bottom:20px;left:20px;right:20px;font-size:13px}} @keyframes slideinwards{0%{opacity:0}20%{opacity:1;bottom:0}50%{opacity:1;bottom:0}80%{opacity:1;bottom:0}100%{opacity:0;bottom:-70px;visibility:hidden}} @-webkit-keyframes slideinwards{0%{opacity:0}20%{opacity:1;bottom:0}50%{opacity:1;bottom:0}80%{opacity:1;bottom:0}100%{opacity:0;bottom:-70px;visibility:hidden}} .darkMode .tNtf span{box-shadow:0 10px 40px rgba(0,0,0,.2)}
+/* RGB Effect */.stwRainbow,.stwBlurRainbow{position:fixed;width:100%;bottom:0;left:0;right:0;height:3px;z-index:23;background:linear-gradient(-45deg, #4086F4, #31A952, #FBBE01, #EB4132,#4086F4, #31A952, #FBBE01, #EB4132);background-size:200%;-webkit-animation:animeBar 5s linear infinite;animation:animeBar 5s linear infinite}.stwBlurRainbow{height:10px;z-index:22;filter:blur(10px);opacity:.7}@-webkit-keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}@keyframes animeBar{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}.iFxd.ts{top:auto;bottom:5;right:auto;left:0} .aNm.t{background:rgba(255,255,255,.8);padding:6px} .aNm.t .im{width:16px;height:16px;margin-right:4px} .aNm.t .nm{font-size:13px;color:var(--bodyC)}
+</style>
+<body>
+	
+<script language='JavaScript1.2'>
+function disableselect(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=disableselect
+document.onclick=reEnable
+}
+</script>
+<div class='clear'></div>
+<div class='widget HTML' data-version='1' id='HTML2'>
+<div class='widget-content'>
+<script> var message="Dilarang Copy Paste!";
+///////////////////////////////////
+function clickIE4(){if (event.button==2){alert(message);return false;}} function clickNS4(e){if (document.layers||document.getElementById&&!document.all){if (e.which==2||e.which==3){alert(message);return false;}}} if (document.layers){document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS4;} else if (document.all&&!document.getElementById){document.onmousedown=clickIE4;} document.oncontextmenu=new Function("swals.fire('Ups!' , 'Dilarang copy paste, ya!' , 'warning');return false")</script>
+<div class='clear'></div></div></div>
+<div id='toastNotif' class='tNtf'></div>
+<script>/*<![CDATA[*/ /* No Internet Connection Script by Daffa Pratama */ function pageReload(){var n=document.querySelector("#noInternet .popBo .popBtn svg");null!=n&&n.classList.add("r"),setTimeout(function(){window.location.reload()},500)};window.addEventListener("offline",function(){document.querySelector("#noInternet").classList.remove("hidden"),document.querySelector("#toastNotif").innerHTML="<span>Tidak ada koneksi internet!</span>"}),window.addEventListener("online",function(){document.querySelector("#noInternet").classList.add("hidden"),document.querySelector("#toastNotif").innerHTML="<span>Kembali online!</span>"}); /*]]>*/</script>
+<div class='stwRainbow'></div>
+<div class='stwBlurRainbow'></div>
+	
+   <div id="bodyblur">
+     <!-- Wallpaper --><img src="https://feeldreams.github.io/pics/awan.jpg" id="wallpaper"/>
+   </div>
+
+   <!-- Ganti Audio di sini -->
+   <audio src="https://feeldreams.github.io/audio/nightchanges.mp3" id="linkmp3" class="sembunyi"></audio>
+   
+   <div class="parallax">
+     <div id="beneranblur"></div>
+     <div class="konten">
+       <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+       <h1 class="title">Hey Ayangg!</h1>
+       <p class="fade-in">Aku ada pesan buat kamu nih 🤭</p>
+     </div>
+   </div>
+   
+   <section>
+      <div class="wp"><img src="https://feeldreams.github.io/pics/awan1.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+       <h1 class="title">Hey Ayangg!</h1>
+       <p class="slide-up">Aku ada pesan buat kamu nih 🤭</p>
+  </section>
+  
+  <section>
+      <div class="wp"><img src="https://feeldreams.github.io/pics/awan2.jpg"/></div>
+      <h2 class="title">Kamu Tau?</h2>
+      <p class="slide-right">Aku ga pernah nyesel jatuh cinta<br>sedalam ini sama <b class="lingkar">kamu</b>,<br></p>
+      <p class="flip">Soalnya kamu memang pantes<br>banget untuk aku perjuangin..</p>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src="https://feeldreams.github.io/pics/awan3.jpg"/></div>
+      <h3 class="title slide-right">Dan Asal Kamu Tau..</h3>
+      <p class="slide-up">Betapa beruntungnya<br>aku semenjak kenal sama <b class="lingkar">kamu</b></p>
+  </section>
+  
+  <section>
+  	<div class="wp"><img src="https://feeldreams.github.io/pics/awan4.jpg"/></div>
+      <img class="stiker fade-in" src="https://feeldreams.github.io/ciumin.gif"/>
+      <h3 class="title">I'm very lucky to have u ✨</h3>
+      <p class="slide-right">Kamu bener² buktiin ke aku<br>kalo ga semua orang itu <b class="lingkar">jahat</b></p>
+  </section>
+  
+  <section id="iniakhir">
+  	<h1 id="hsatu" class="slide-up">Terakhir...</h1>
+      <img id="foto" class="stiker flip" src="https://feeldreams.github.io/bunga.gif"/>
+      <p id="kalimat" class="flip">Coba klik ini deh ❤️</p>
+    
+      <h1 id="judulakhir"></h1>
+      <p id="kalimatakhir"></p>
+  </section>
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+judulakhir = "I Love You";
+kalimatakhir = "Makasii udah treat aku sebaik mungkin.. part paling bahagia<br>itu cuma kamu..<br><br><i>`you are my favorite person,<br>you make me happy everyday..`</i><br><br>Please <b>Stay with Me</b> yaa! ❤️";
+
+const body = document.querySelector("body"); audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+ScrollReveal({ reset: true });
+ScrollReveal().reveal(".show-once", { reset: false});
+ScrollReveal().reveal(".title", {duration: 2500,origin: "top",distance: "50px", easing: "cubic-bezier(0.5, 0, 0, 1)", rotate: { x: 20, z: -10 }});
+ScrollReveal().reveal(".fade-in", {delay: 200, duration: 2500,move: 0});
+ScrollReveal().reveal(".scaleUp", {duration: 2500, scale: 0.85});
+ScrollReveal().reveal(".flip", {delay: 200, duration: 2000, rotate: { x: 20, z: 20}});
+ScrollReveal().reveal(".slide-right", {duration: 1000,origin: "left",distance: "300px",easing: "ease-in-out"});
+ScrollReveal().reveal(".slide-up", {duration: 1500, origin: "bottom", distance: "100px", easing: "cubic-bezier(.37,.01,.74,1)", opacity: 0, scale: 0.5});
+
+fungsi=0;fungsiklik=0;
+document.getElementById("iniakhir").onclick = function() {
+  if(fungsiklik==0){
+    hsatu.style="opacity:0";
+    foto.style="opacity:0";
+    kalimat.style="opacity:0";
+    iniakhir.style="background:none";
+    wallpaper.style="opacity:.7;transform: scale(1)";
+    fungsiklik=1;
+    setTimeout(katajudul,300)
+  }
+}
+
+function katajudul(){
+	  hsatu.style="display:none";
+      foto.style="display:none";
+      kalimat.style="display:none";
+  	new TypeIt("#judulakhir", {
+      strings: ["" + judulakhir], startDelay: 50, speed: 50, cursor: false,
+      afterComplete: function(){
+      	judulakhir.innerHTML = judulakhir;
+          setTimeout(katakata,300);
+      },}).go();
+}
+function katakata(){
+	  new TypeIt("#kalimatakhir", {
+      strings: ["" + kalimatakhir], startDelay: 50, speed: 50, cursor: false,
+      afterComplete: function(){
+      	kalimatakhir.innerHTML = kalimatakhir;
+          setInterval(berjatuhan,200);
+      },}).go();
+}
+let tinggi = iniakhir.offsetHeight;
+console.log(tinggi);
+function tes(){
+  if(fungsi==0){
+    window.scrollBy({top: tinggi,behavior: 'smooth'});
+    fungsi = 1;
+    setTimeout(smn,1000);
+  }
+}
+  function smn(){fungsi=0}
+  
+  window.scrollTo(0, 0);
+
+  document.addEventListener('DOMContentLoaded', function(e) {
+    document.addEventListener('scroll', function(e) {
+        let documentHeight = document.body.scrollHeight;
+        let currentScroll = window.scrollY + window.innerHeight;
+        // When the user is [modifier]px from the bottom, fire the event.
+        let modifier = 200; 
+        if(currentScroll + modifier > documentHeight) {
+            console.log('You are at the bottom!');
+            initom.style="opacity:0;bottom:0";
+            wallpaper.style="opacity:1";
+        } else {
+            initom.style="";
+            wallpaper.style="";
+        }
+    })
+})
+</script>
+<div id='noInternet' class='popSc hidden'> <div class='popBo'> <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><line x1='1' x2='23' y1='1' y2='23' /><path d='M16.72 11.06A10.94 10.94 0 0 1 19 12.55' /><path d='M5 12.55a10.94 10.94 0 0 1 5.17-2.39' /><path d='M10.71 5.05A16 16 0 0 1 22.58 9' /><path d='M1.42 9a15.91 15.91 0 0 1 4.7-2.88' /><path d='M8.53 16.11a6 6 0 0 1 6.95 0' /><line x1='12' x2='12.01' y1='20' y2='20' /></svg> <h2>Oops! No Internet!</h2> <p>Sepertinya ada yang salah dengan koneksi internet Anda.<br />Sambungkan ke internet dan mulai menjelajah lagi.</p> <button class='popBtn' onclick='pageReload()'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><polyline points='23 4 23 10 17 10' /><path d='M20.49 15a9 9 0 1 1-2.12-9.36L23 10' /></svg></button> </div> </div>
+</body>
+</html>
